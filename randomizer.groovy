@@ -1,7 +1,7 @@
 def makeid() {
     def text = "";
-    String possibleLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    String possibleNumbers = "0123456789"
+    String possibleLetters = "ABCDEFGHJKLMNOPRSTUVWXYZ";
+    String possibleNumbers = "23456789"
     for (int i = 0; i < 3; i++) {
         text += possibleLetters.charAt(Math.floor(Math.random() * possibleLetters.length()) as Integer);
     }
